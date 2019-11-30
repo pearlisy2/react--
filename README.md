@@ -27,6 +27,13 @@
 
 `cnpm install react-app-rewired customize-cra babel-plugin-import http-proxy-middleware --dev` 
 
+# 装饰器的使用
+>- @babel/plugin-proposal-decorators
+  - react-scripts
+  - @babel/plugin-syntax-jsx
+  - @babel/helper-create-regexp-features-plugin
+
+  `yarn add @babel/plugin-proposal-decorators react-scripts @babel/plugin-syntax-jsx @babel/helper-create-regexp-features-plugin --dev`
 # 调试工具
 
 >- redux-devtools-extension
