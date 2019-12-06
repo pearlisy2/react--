@@ -26,3 +26,60 @@ export const Login = Loadable({
     loading:Loading
 })
 
+
+export const Hot = Loadable({
+    loader:_=>import("./hot"),
+    loading:Loading
+})
+
+
+
+export const Man = Loadable({
+    loader:_=>import("./man"),
+    loading:Loading
+})
+
+export const Search = Loadable({
+    loader:_=>import("./search"),
+    loading:Loading
+})
+
+export const Register = Loadable({
+    loader:_=>import("./register"),
+    loading:Loading
+})
+
+export const ProType = Loadable({
+    loader:_=>import("./manProductType"),
+    loading:Loading
+})
+
+export const ClassItemMan = Loadable({
+    loader:_=>import("./classItemMan"),
+    loading:Loading
+})
+
+export const ClassItemWomon = Loadable({
+    loader:_=>import("./classItemWomon"),
+    loading:Loading
+})
+
+export const Woman = Loadable({
+    loader:_=>import("./woman"),
+    loading:Loading
+})
+
+export const Beauty=Loadable({
+    loader:_=>import("./beauty"),
+    loading:Loading
+})
+
+export const Setting = Loadable({
+    loader:_=>import("./setting"),
+    loading:Loading
+})
+
+export const Setpwd = Loadable({
+    loader:_=>import("./setPwd"),
+    loading:Loading
+})

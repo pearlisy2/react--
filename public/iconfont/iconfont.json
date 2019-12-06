@@ -41,6 +41,13 @@
       "unicode_decimal": 58912
     },
     {
+      "icon_id": "1011831",
+      "name": "hot",
+      "font_class": "hot",
+      "unicode": "e647",
+      "unicode_decimal": 58951
+    },
+    {
       "icon_id": "1138728",
       "name": "line",
       "font_class": "line",

@@ -12,6 +12,7 @@
     "babel-loader": "8.0.6",
     "babel-plugin-named-asset-import": "^0.3.4",
     "babel-preset-react-app": "^9.0.2",
+    "better-scroll": "^1.15.2",
     "camelcase": "^5.2.0",
     "case-sensitive-paths-webpack-plugin": "2.2.0",
     "css-loader": "2.1.1",
@@ -139,5 +140,11 @@
         }
       ]
     ]
+  },
+  "devDependencies": {
+    "@babel/helper-create-regexp-features-plugin": "^7.7.4",
+    "@babel/plugin-proposal-decorators": "^7.7.4",
+    "@babel/plugin-syntax-jsx": "^7.7.4",
+    "react-scripts": "^3.2.0"
   }
 }

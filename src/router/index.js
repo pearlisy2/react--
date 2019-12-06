@@ -3,7 +3,18 @@ import {
     Classfiy,
     Cart,
     Mine,
-    Login
+    Login,
+    Hot,
+    Man,
+    Search,
+    Register,
+    ProType,
+    ClassItemMan,
+    ClassItemWomon,
+    Woman,
+    Beauty,
+    Setting,
+    Setpwd
 } from "pages"
 
 export const TabBarRoute = [
@@ -14,7 +25,41 @@ export const TabBarRoute = [
             flag:true
         },
         icon:"\ue6b3",
-        text:"首页"
+        text:"首页",
+        children:[
+            {
+                path:"/home/hot",
+                component:Hot,
+                meta:{
+                    flag:true,
+                    
+                },
+            },
+            {
+                path:"/home/man/:categoryId/:onclickIndex",
+                component:Man,
+                meta:{
+                    flag:true,
+                    
+                },
+            },
+            {
+                path:"/home/woman/:categoryId/:onclickIndex",
+                component:Woman,
+                meta:{
+                    flag:true,
+                    
+                },
+            },
+            {
+                path:"/home/beauty",
+                component: Beauty,
+                meta:{
+                    flag:true,
+                    
+                },
+            }
+        ]
     },
     {
         path:"/classfiy",
@@ -23,7 +68,24 @@ export const TabBarRoute = [
             flag:true
         },
         icon:"\ue60d",
-        text:"分类"
+        text:"分类",
+        children:[
+          
+            {
+                path:"/classfiy/classItemMan",
+                component:ClassItemMan,
+                meta:{
+                    flag:true
+                }
+            },
+            {
+                path:"/classfiy/classItemWomon",
+                component:ClassItemWomon,
+                meta:{
+                    flag:true
+                }
+            }
+        ]
     },
     {
         path:"/cart",
@@ -52,6 +114,34 @@ export const NoTabBarRoute = [
         path:"/login",
         component:Login,
         meta:{}
+    },
+    {
+        path:"/search",
+        component:Search,
+        meta:{}
+    },
+    {
+        path:"/register",
+        component:Register,
+        meta:{}
+    },
+    {
+        path:"/manProductType/:categoryId/:stp/:productId",
+        component:ProType,
+        meta:{}
+    },{
+        path:"/setting",
+        component:Setting,
+        meta:{
+            requiredAuth:true
+        }
+    },
+    {
+        path:"/Setpwd",
+        component:Setpwd,
+        meta:{
+            requiredAuth:true
+        }
     }
 ];
 

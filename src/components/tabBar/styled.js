@@ -29,7 +29,7 @@ export const TabBarContainer = styled.div`
             font-size:.2rem;
         }
         span{
-            font-size:.15rem;
+            font-size:.12rem;
         }
     }
 
