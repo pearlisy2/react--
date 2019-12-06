@@ -48,7 +48,9 @@ export const RegisterAction = (username, password)=>{
     let registAction = createAction(RegisterInput,data=>data)
     return async (dispatch)=>{
         let data = await RegisterApi(username, password);
-        dispatch(registAction(data))
+            dispatch(registAction(data))
+        // console.log(data)
+       
     }
 }
 
@@ -56,6 +58,7 @@ export const LoginAction = (username, password)=>{
     let LoginToAction = createAction(LoginInput,data=>data)
     return async (dispatch)=>{
         let data = await LoginApi(username, password);
+        console.log(data)
         if(data.data.code==1){
             Toast.success(data.data.info,1.5)
             localStorage.setItem( "userIf",JSON.stringify({
